@@ -27,9 +27,6 @@ public class Tomo {
         int w = image.getWidth();
         int r = w/2 - 5;
         int h = image.getHeight();
-//        BufferedImage temp = sinogram.scanObject(90, r, w, h, 6, 1, image, topLight);//180 360
-//        BufferedImage sinogramImage = sinogram.createSinogram();
-//        BufferedImage redrawnImage = sinogram.createObjectFromSinogram();
         NewJFrame frame = new NewJFrame();
         frame.width = w;
         frame.height = h;
@@ -37,10 +34,6 @@ public class Tomo {
         frame.image = image;
         frame.topLight = topLight;
         frame.sinogram = sinogram;
-//        frame.loadFirstImage(temp);
-//        frame.loadSecondImage(sinogramImage);
-//        frame.loadThirdImage(redrawnImage);
-        
         frame.setVisible(true);
     }
  
